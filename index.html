@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/css-main.css">
+
+    <title>ES6 - TravelTip</title>
+</head>
+
+<body>
+    <!-- <div class="screen"></div> -->
+    <!-- <div class="modal"></div> -->
+
+    <h1>ES6 TravelTip - by Mina & Ido</h1>
+    <section class="search-cont">
+        <input autofocus class="search" type="search" placeholder="Enter Location">
+        <button class="go">Go!</button>
+        <button class="myLoc">My Location</button>
+        <button class="copyLoc">Copy Location</button>
+    </section>
+    <h2></h2>
+
+    <section id="map" class="map-container video-container"></section>
+    <!-- <button class="btn">Click Me</button> -->
+
+    <section class="locations-container">
+        <table class="locations-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Lat</th>
+                    <th>Lng</th>
+                    <th>Weather</th>
+                    <th>CreatedAt</th>
+                    <th>UpdatedAt</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="locations-list">
+
+            </tbody>
+        </table>
+    </section>
+
+    <section class="weather-details-container">
+        <h1 class="current-temp"></h1>
+        <h2 class="weather-description"></h2>
+    </section>
+
+    <script src="lib/jquery.js"></script>
+    <script src="lib/axios.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
